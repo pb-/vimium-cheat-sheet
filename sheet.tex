@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{csquotes}
+
+\newcommand{\narrowtabhead}{\texttt{x}-- \= \kill}
+\newcommand{\tabhead}{\texttt{xx}-- \= \kill}
+\newcommand{\widetabhead}{\texttt{xxxxxx}-- \= \kill}
+
+
+\begin{document}
+  \thispagestyle{empty}
+  
+  \begin{multicols*}{4}
+    \begin{tabbing}
+      \tabhead
+      \textbf{Navigating the current page} \\
+      \\
+      \texttt{?}  \> show help \\
+      \texttt{h}  \> scroll left \\
+      \texttt{j}  \> scroll down \\
+      \texttt{k}  \> scroll up \\
+      \texttt{l}  \> scroll right \\
+      \texttt{gg} \> scroll to top of the page \\
+      \texttt{G}  \> scroll to bottom of the page \\
+      \texttt{d}  \> scroll down half a page \\
+      \texttt{u}  \> scroll up half a page \\
+      \texttt{f}  \> open a link in the current tab \\
+      \texttt{F}  \> open a link in a new tab \\
+      \texttt{r}  \> reload \\
+      \texttt{gs} \> view source \\
+      \texttt{i}  \> enter insert mode (ESC to exit) \\
+      \texttt{yy} \> copy the current url \\
+      \texttt{yf} \> copy a link url to the clipboard \\
+      \texttt{gf} \> cycle forward to the next frame \\
+      \texttt{gF} \> focus the main/top frame \\
+    \end{tabbing}
+    
+    \columnbreak
+    
+    \begin{tabbing}
+      \narrowtabhead
+      \textbf{Navigating to new pages} \\
+      \\
+      \texttt{o} \> Open URL \\
+      \texttt{O} \> Open URL (new tab) \\
+      \texttt{b} \> Open bookmark \\
+      \texttt{B} \> Open bookmark (new tab) \\
+      \\
+      \\
+      \textbf{Using find} \\
+      \\
+      \texttt{/} \> enter find mode \\
+      \texttt{n} \> next match \\
+      \texttt{N} \> previous match \\
+      \\
+      \\
+      \textbf{Navigate history} \\
+      \\
+      \texttt{H} \> go back \\
+      \texttt{L} \> go forward \\
+    \end{tabbing}
+    
+    \columnbreak
+    
+    \begin{tabbing}
+      \widetabhead
+      \textbf{Manipulating tabs} \\
+      \\
+      \texttt{J, gT} \> go one tab left \\
+      \texttt{K, gt} \> go one tab right \\
+      \texttt{g0}    \> go to the first tab \\
+      \texttt{g\$}   \> go to the last tab \\
+      \texttt{\^}    \> visit previous tab \\
+      \texttt{t}     \> create tab \\
+      \texttt{yt}    \> duplicate current tab \\
+      \texttt{x}     \> close current tab \\
+      \texttt{X}     \> undo close tab \\
+      \texttt{T}     \> search through tabs \\
+      \texttt{<a-p>} \> pin/unpin tab \\
+      \\
+      \\
+      \textbf{Using marks} \\
+      \\
+      \texttt{ma, mA} \> set local/global mark \texttt{a}/\texttt{A} \\
+      \texttt{`a, `A} \> jump to local/global mark \texttt{a}/\texttt{A} \\
+      \texttt{``}     \> jump back before jump to mark \\
+    \end{tabbing}
+    
+    \columnbreak
+    
+    \begin{tabbing}
+      \widetabhead
+      \textbf{Advanced usage} \\
+      \\
+      \texttt{]], [[} \> Follow \enquote{next}/\enquote{previous} link \\
+      \texttt{<a-f>}  \> open multiple links in a new tab \\
+      \texttt{gi}     \> focus input box \\
+      \texttt{gu}     \> go up one level in the URL \\
+      \texttt{gU}     \> go up to root of the URL \\
+      \texttt{ge}     \> edit the current URL \\
+      \texttt{gE}     \> edit the current URL (new tab) \\
+      \texttt{zH}     \> scroll all the way left \\
+      \texttt{zL}     \> scroll all the way right \\
+      \texttt{v}      \> enter visual mode \\
+      \texttt{V}      \> enter visual line mode \\
+    \end{tabbing}
+  \end{multicols*}
+\end{document}
