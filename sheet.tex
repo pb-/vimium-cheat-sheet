@@ -7,6 +7,9 @@
 \newcommand{\tabhead}{\texttt{xx}-- \= \kill}
 \newcommand{\widetabhead}{\texttt{xxxxxx}-- \= \kill}
 
+\newcommand{\topic}[1]{\textbf{#1} \\ \\}
+\newcommand{\cheat}[2]{\texttt{#1} \> #2 \\}
+
 
 \begin{document}
   \thispagestyle{empty}
@@ -14,96 +17,89 @@
   \begin{multicols*}{4}
     \begin{tabbing}
       \tabhead
-      \textbf{Navigating the current page} \\
-      \\
-      \texttt{?}  \> show help \\
-      \texttt{h}  \> scroll left \\
-      \texttt{j}  \> scroll down \\
-      \texttt{k}  \> scroll up \\
-      \texttt{l}  \> scroll right \\
-      \texttt{gg} \> scroll to top of the page \\
-      \texttt{G}  \> scroll to bottom of the page \\
-      \texttt{d}  \> scroll down half a page \\
-      \texttt{u}  \> scroll up half a page \\
-      \texttt{f}  \> open a link in the current tab \\
-      \texttt{F}  \> open a link in a new tab \\
-      \texttt{r}  \> reload \\
-      \texttt{gs} \> view source \\
-      \texttt{i}  \> enter insert mode (ESC to exit) \\
-      \texttt{yy} \> copy the current url \\
-      \texttt{yf} \> copy a link url to the clipboard \\
-      \texttt{gf} \> cycle forward to the next frame \\
-      \texttt{gF} \> focus the main/top frame \\
+      \topic{Navigating the current page}
+      \cheat{?}{show help}
+      \cheat{h}{scroll left}
+      \cheat{j}{scroll down}
+      \cheat{k}{scroll up}
+      \cheat{l}{scroll right}
+      \cheat{gg}{scroll to top of the page}
+      \cheat{G}{scroll to bottom of the page}
+      \cheat{d}{scroll down half a page}
+      \cheat{u}{scroll up half a page}
+      \cheat{f}{open a link in the current tab}
+      \cheat{F}{open a link in a new tab}
+      \cheat{r}{reload}
+      \cheat{gs}{view source}
+      \cheat{i}{enter insert mode (ESC to exit)}
+      \cheat{yy}{copy the current url}
+      \cheat{yf}{copy a link url to the clipboard}
+      \cheat{gf}{cycle forward to the next frame}
+      \cheat{gF}{focus the main/top frame}
     \end{tabbing}
     
     \columnbreak
     
     \begin{tabbing}
       \narrowtabhead
-      \textbf{Navigating to new pages} \\
-      \\
-      \texttt{o} \> Open URL \\
-      \texttt{O} \> Open URL (new tab) \\
-      \texttt{b} \> Open bookmark \\
-      \texttt{B} \> Open bookmark (new tab) \\
-      \\
-      \\
-      \textbf{Using find} \\
-      \\
-      \texttt{/} \> enter find mode \\
-      \texttt{n} \> next match \\
-      \texttt{N} \> previous match \\
+      \topic{Navigating to new pages}
+      \cheat{o}{Open URL}
+      \cheat{O}{Open URL (new tab)}
+      \cheat{b}{Open bookmark}
+      \cheat{B}{Open bookmark (new tab)}
       \\
       \\
-      \textbf{Navigate history} \\
+      \topic{Using find}
+      \cheat{/}{enter find mode}
+      \cheat{n}{next match}
+      \cheat{N}{previous match}
       \\
-      \texttt{H} \> go back \\
-      \texttt{L} \> go forward \\
+      \\
+      \topic{Navigate history}
+      \cheat{H}{go back}
+      \cheat{L}{go forward}
     \end{tabbing}
     
     \columnbreak
     
     \begin{tabbing}
       \widetabhead
-      \textbf{Manipulating tabs} \\
+      \topic{Manipulating tabs}
+      \cheat{J, gT}{go one tab left}
+      \cheat{K, gt}{go one tab right}
+      \cheat{g0}{go to the first tab}
+      \cheat{g\$}{go to the last tab}
+      \cheat{\^}{visit previous tab}
+      \cheat{t}{create tab}
+      \cheat{yt}{duplicate current tab}
+      \cheat{x}{close current tab}
+      \cheat{X}{undo close tab}
+      \cheat{T}{search through tabs}
+      \cheat{<a-p>}{pin/unpin tab}
       \\
-      \texttt{J, gT} \> go one tab left \\
-      \texttt{K, gt} \> go one tab right \\
-      \texttt{g0}    \> go to the first tab \\
-      \texttt{g\$}   \> go to the last tab \\
-      \texttt{\^}    \> visit previous tab \\
-      \texttt{t}     \> create tab \\
-      \texttt{yt}    \> duplicate current tab \\
-      \texttt{x}     \> close current tab \\
-      \texttt{X}     \> undo close tab \\
-      \texttt{T}     \> search through tabs \\
-      \texttt{<a-p>} \> pin/unpin tab \\
       \\
-      \\
-      \textbf{Using marks} \\
-      \\
-      \texttt{ma, mA} \> set local/global mark \texttt{a}/\texttt{A} \\
-      \texttt{`a, `A} \> jump to mark \texttt{a}/\texttt{A} \\
-      \texttt{``}     \> jump back \\
+      \topic{Using marks}
+      \cheat{ma, mA}{set local/global mark \texttt{a}/\texttt{A}}
+      \cheat{`a, `A}{jump to mark \texttt{a}/\texttt{A}}
+      \cheat{``}{jump back}
     \end{tabbing}
     
     \columnbreak
     
     \begin{tabbing}
       \widetabhead
-      \textbf{Advanced usage} \\
-      \\
-      \texttt{]], [[} \> Follow \enquote{next}/\enquote{previous} link \\
-      \texttt{<a-f>}  \> open multiple links in a new tab \\
-      \texttt{gi}     \> focus input box \\
-      \texttt{gu}     \> go up one level in the URL \\
-      \texttt{gU}     \> go up to root of the URL \\
-      \texttt{ge}     \> edit the current URL \\
-      \texttt{gE}     \> edit the current URL (new tab) \\
-      \texttt{zH}     \> scroll all the way left \\
-      \texttt{zL}     \> scroll all the way right \\
-      \texttt{v}      \> enter visual mode \\
-      \texttt{V}      \> enter visual line mode \\
+      \topic{Advanced usage}
+      \cheat{]], [[}{Follow \enquote{next}/\enquote{previous} link}
+      \cheat{<a-f>}{open multiple links in a new tab}
+      \cheat{gi}{focus input box}
+      \cheat{gu}{go up one level in the URL}
+      \cheat{gU}{go up to root of the URL}
+      \cheat{ge}{edit the current URL}
+      \cheat{gE}{edit the current URL (new tab)}
+      \cheat{zH}{scroll all the way left}
+      \cheat{zL}{scroll all the way right}
+      \cheat{v}{enter visual mode}
+      \cheat{V}{enter visual line mode}
       \\
       \\
       \\
