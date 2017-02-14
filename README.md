@@ -4,8 +4,8 @@ A printable cheat sheet for the default bindings of [Vimium](https://vimium.gith
 
 ## Download
 
- * [Vimium cheat sheet, A4 paper]()
- * [Vimium cheat sheet, letter paper]()
+ * [Vimium cheat sheet, A4 paper](https://baecher.github.com/files/vimium-cheat-sheet-a4.pdf)
+ * [Vimium cheat sheet, letter paper](https://baecher.github.com/files/vimium-cheat-sheet-letter.pdf)
 
 ## Building from source
 
